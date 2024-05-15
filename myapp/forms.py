@@ -8,7 +8,7 @@ class FormContact(ModelForm):
         exclude = ['id', 'tanggal']
 
         widgets = {
-            'name': forms.TextInput({'class': 'form-control'}),
+            'nama': forms.TextInput({'class': 'form-control'}),
             'email': forms.TextInput({'class': 'form-control'}),
-            'message': forms.Textarea({'class': 'form-control'}),
+            'pesan': forms.Textarea({'class': 'form-control'}),
         }

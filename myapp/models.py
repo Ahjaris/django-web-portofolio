@@ -18,9 +18,9 @@ class Project(models.Model):
         return self.nama
     
 class Contact(models.Model):
-    name = models.CharField(max_length=30)
+    nama = models.CharField(max_length=30)
     email = models.EmailField(max_length=30)
-    message = models.TextField()
+    pesan = models.TextField()
     tanggal = models.DateTimeField(auto_now=True)
     def __str__(self):
         return self.nama
